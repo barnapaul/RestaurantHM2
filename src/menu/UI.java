@@ -1,3 +1,5 @@
+package menu;
+
 import java.util.Scanner;
 
 public class UI {
@@ -13,12 +15,8 @@ public class UI {
     public void startScreen() {
         System.out.println("1. Display Store Products");
         System.out.println("2. Display Cart");
+        System.out.println("3. Display Cart Price");
         System.out.println("0. Exit");
-    }
-
-    public void storeProductsMenu() {
-        System.out.println("1. Add to Cart");
-
     }
 
     public void menu() {
@@ -30,8 +28,7 @@ public class UI {
                 case 1:
                     Menu.showAllMenu();
 //                    storeProductsMenu();
-                    System.out.print("Choose item");
-//                    getUserInput();
+                    System.out.print("Choose item: " + "\n");
                     chooseItem();
                     break;
                 case 2:
@@ -42,7 +39,7 @@ public class UI {
                     }
                     break;
                 case 3 :
-                    System.out.print("Total Price: " + cart.getTotalPrice() + "\n");
+                    System.out.print(cart.getTotalPrice());
                     break;
                 case 0:
                     System.exit(0);

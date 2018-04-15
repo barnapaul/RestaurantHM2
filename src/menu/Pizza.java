@@ -1,3 +1,5 @@
+package menu;
+
 public class Pizza extends Product {
 
 
@@ -7,7 +9,8 @@ public class Pizza extends Product {
 
     @Override
     public String toString() {
-        return getId() + ". " + getName() + " " + getPrice() + "\n";
+        
+        return getId() + ". Pizza:  " + getName() + "\n\t\tPrice: " + getPrice() + "\n";
     }
 }
 
